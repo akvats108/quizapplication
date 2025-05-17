@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  body {
+    height: 100vh;
+    background-image: url(1.jpg);
+  }
+  .start-screen,
+  .score-container {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Times New Roman';
+  }
+  button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #ff7200;
+  }
+
+  #start-button,
+  #restart {
+    font-size: 1.3em;
+    padding: 0.5em 1.8em;
+    border-radius: 0.2em;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.4);
+    font-family: Elephant;
+    border: none;
+    background-color: #ff7200;
+  }
+
+  #restart {
+    margin-top: 0.9em;
+  }
+  
+  #restart a {
+    text-decoration: none;
+    font-family: "Elephant";
+    color: #000001;
+  }
+  #display-container {
+    background-image: url(5.jpg);
+    padding: 3.1em 1.8em;
+    width: 80%;
+    max-width: 37.5em;
+    margin: 0 auto;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 0.6em;
+  }
+  .header {
+    margin-bottom: 1.8em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0.6em;
+    border-bottom: 0.1em solid #ff7200;
+    font-family: 'Elephant';
+    font: bold;
+  }
+  .timer-div {
+    background-color: #ff7200;
+    width: 7.5em;
+    border-radius: 1.8em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.7em 1.8em;
+  }
+  .question {
+    margin-bottom: 1.25em;
+    font-weight: 600;
+    font-family: 'Times New Roman';
+    font-size: 1em;
+  }
+  .option-div {
+    font-size: 1em;
+    width: 100%;
+    padding: 1em;
+    margin: 0.3em 0;
+    text-align: left;
+    outline: none;
+    background: transparent;
+    border: 1px solid #000001;
+    border-radius: 0.3em;
+    font-family: 'Times New Roman', Times, serif;
+    font: bold;
+  }
+  .option-div:disabled {
+    color: #000000;
+    cursor: not-allowed;
+  }
+  #next-button {
+    font-size: 1em;
+    margin-top: 1.5em;
+    background-color:#ff7200;
+    color: #ffffff;
+    padding: 0.7em 1.8em;
+    border-radius: 0.3em;
+    float: right;
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.3);
+    font-family: 'Times New Roman';
+    font-size: larger;
+  }
+  .hide {
+    display: none;
+  }
+  .incorrect {
+    background-color: #FF0000;
+    color: #FF0000;
+    border-color: #140e0e;
+  }
+  .correct {
+    background-color: #006400;
+    color: #006400;
+    border-color: #040404;
+  }
+  #user-score {
+    font-size: 1.5em;
+    color: #ffffff;
+  }
